@@ -1,0 +1,50 @@
+.top_bar{
+  color: white;
+  height: 34px;
+  width: 40px;
+  font-size: 34px;
+  text-align: center;
+  cursor: pointer;
+  margin: auto;
+}
+.side{
+  width: 75vw;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  .side{
+    width: 50vw;
+  }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  .side{
+    width: 50vw;
+  }
+  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  .side{
+    width: 20vw;
+  }
+  }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  .side{
+    width: 15vw;
+  }
+  }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+  .side{
+    width: 15vw;
+  }
+  }
+  .logout{
+    color: brown;
+    border: none;
+  }

@@ -1,0 +1,105 @@
+<!-- 
+  <nav class="navbar navbar-expand-lg bg-body-tertiary px-5 fixed-top">
+
+    <a class="col-4 col-md-2 col-lg-1 navbar-brand" href="#">
+      <img src="./assets/images/logo-2.png" alt="Logo" width="50%">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+
+        <a class="nav-link active mx-2 " aria-current="page" href="#">Home</a>
+        <a class="nav-link mx-2 custom_cursor" (click)="navigate('about-us')">About Us</a>
+
+        <li class="nav-item dropdown mx-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom_cursor" (click)="navigate('services')">Service page 01</a></li>
+            <li><a class="dropdown-item" href="#">Service page 02</a></li>
+            <li><a class="dropdown-item" href="#">Service page 03</a></li>
+            <li><a class="dropdown-item" href="#">Service page 04</a></li>
+            <li><a class="dropdown-item" href="#">Service page 05</a></li>
+          </ul>
+
+        </li>
+        <li class="nav-item dropdown mx-2">
+
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Our Portfolio
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom_cursor" (click)="navigate('our_portfolio')">Projects</a></li>
+            <li><a class="dropdown-item custom_cursor" (click)="navigate('blogs')">Blogs</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+
+        </li>
+
+        <a class="nav-link mx-2 custom_cursor" (click)="navigate('contact_us')">Contact Us</a>
+        <a class="nav-link mx-2" href="#">More</a>
+
+        <button class="btn primary_btn" (click)="navigate('login')">
+          Login
+        </button>        
+
+
+      </div>
+    </div>
+  </nav> -->
+
+
+
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary px-5 fixed-top">
+    <a class="col-4 col-md-2 col-lg-1 navbar-brand" href="#">
+      <img src="./assets/images/logo-2.png" alt="Logo" width="50%">
+    </a>
+  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-link mx-2" aria-current="page" href="#">Home</a>
+
+        <a class="nav-link mx-2 custom_cursor" (click)="navigate('about-us')" [routerLink]="'/about-us'" routerLinkActive="active">About Us</a>
+  
+        <li class="nav-item dropdown mx-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom_cursor" (click)="navigate('services')" [routerLink]="'/services'" routerLinkActive="active">Service page 01</a></li>
+            <li><a class="dropdown-item" (click)="navigate('service2')" [routerLink]="'/service2'" routerLinkActive="active">Service page 02</a></li>
+            <li><a class="dropdown-item" (click)="navigate('service3')" [routerLink]="'/service3'" routerLinkActive="active">Service page 03</a></li>
+          </ul>
+        </li>
+  
+        <li class="nav-item dropdown mx-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Our Portfolio
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom_cursor" (click)="navigate('our_portfolio')" [routerLink]="'/our_portfolio'" routerLinkActive="active">Projects</a></li>
+            <li><a class="dropdown-item custom_cursor" (click)="navigate('blogs')" [routerLink]="'/blogs'" routerLinkActive="active">Blogs</a></li>
+          </ul>
+        </li>
+  
+        <a class="nav-link mx-2 custom_cursor" (click)="navigate('contact_us')" [routerLink]="'/contact_us'" routerLinkActive="active">Contact Us</a>
+        <a class="nav-link mx-2" href="#">More</a>
+  
+        <button class="btn primary_btn" (click)="navigate('login')">Login</button>
+      </div>
+    </div>
+  </nav>
+  

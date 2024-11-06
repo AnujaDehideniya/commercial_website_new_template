@@ -1,0 +1,268 @@
+/* @font-face {
+    font-family: poppings_regular;
+    src: url(assets/fonts/Poppins-Regular.ttf) format("truetype")
+}
+
+body {
+    background: #efefef;
+    font-family: Inter !important;
+}
+
+* {
+    font-family: poppings_regular !important
+} */
+
+.primary_background {
+    background: #0063a8
+}
+
+mat-drawer-content {
+    background: #efefef
+}
+
+a {
+    text-decoration: none
+}
+
+.def_text_color {
+    color: #363636
+}
+
+.light_text_color {
+    color: #a0a0a0
+}
+
+.dark_light-color {
+    color: #4a4a4a
+}
+
+.sub-heading {
+    font-family: pop;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: .25px
+}
+
+.px10_text {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal
+}
+
+.px20_text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+
+.paragraph-text {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal
+}
+
+.select {
+    border: none;
+    background: rgba(0, 0, 0, 0)
+}
+
+.input {
+    border-radius: 10px;
+    border: 1px solid #b8b8b8;
+    width: 100%;
+    background: #fff;
+    padding: 2%
+}
+
+.error {
+    color: red
+}
+
+.button_submit {
+    border-radius: 30px;
+    background-color: #041230 !important;
+    color: #fff !important;
+    padding: 3%;
+    text-transform: uppercase;
+    font-family: #0063a8;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif
+}
+
+mat-drawer-container {
+    height: 93vh
+}
+
+.clickable {
+    cursor: pointer
+}
+
+select:focus,
+textarea:focus,
+input:focus {
+    outline: none
+}
+
+.parent_active {
+    border-radius: 10px !important;
+    background: #041230 !important;
+    color: #fff !important;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%
+}
+
+.line_button {
+    border-radius: 10px;
+    border: 1px solid #838383 !important;
+    color: #838383 !important;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-transform: uppercase
+}
+
+.card {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, .25)
+}
+
+.mat-mdc-form-field-subscript-wrapper {
+    display: none
+}
+
+.action_button {
+    width: 28px;
+    height: 28px;
+    padding: 0%;
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px
+}
+
+.action_button mat-icon {
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    font-size: 20px
+}
+
+.delete_btn {
+    background: #ffe2e0;
+    color: #780801
+}
+
+.delete_btn:hover {
+    background: #eeb6b4;
+    color: #780801
+}
+
+.edit_btn {
+    background: #e9f0ff;
+    color: #041230
+}
+
+.edit_btn:hover {
+    background: #b3c5eb;
+    color: #041230
+}
+
+.expan_btn {
+    background: #fff2e3;
+    color: #f5812c
+}
+
+.expan_btn:hover {
+    background: #e6cfb5;
+    color: #f5812c
+}
+
+.inner_div {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important
+}
+
+.inner_div h4,
+.inner_div h3,
+.inner_div img {
+    display: none
+}
+
+.html_content .img_div {
+    min-width: 30vh;
+    max-width: 50vh;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%
+}
+
+editor {
+    min-height: 30vh
+}
+
+editor .tox {
+    min-height: 30vh !important
+}
+
+.text-danger {
+    text-transform: lowercase
+}
+
+.text-danger::first-letter {
+    text-transform: uppercase !important
+}
+
+.head {
+    background-color: #ddd;
+    height: 5vh;
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.column {
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid #ccc;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.column p {
+    margin-bottom: 0% !important
+}
+
+p {
+    margin-bottom: 1% !important
+}

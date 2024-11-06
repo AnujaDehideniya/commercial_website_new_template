@@ -1,0 +1,21 @@
+<section class="mt-5">
+    <h1 class="heading1 py-5" style="text-align: center;">Articles & Resources</h1> 
+</section>
+
+<section>
+    <div class="container py-5 px-5">
+        <div class="row justify-content-center px-5">
+
+            <ng-container *ngFor="let x of array">
+                <div class="card py-3 px-4 col-4">
+                    <app-blog-card></app-blog-card>
+                </div>
+            </ng-container>
+
+          <div class=" d-flex justify-content-center">
+            <button class="btn primary_btn">View More</button>
+          </div>
+          
+        </div>
+    </div>
+</section>

@@ -1,0 +1,268 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use "@angular/material" as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$coyle-primary: mat.define-palette(mat.$indigo-palette);
+$coyle-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$coyle-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$coyle-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $coyle-primary,
+      accent: $coyle-accent,
+      warn: $coyle-warn
+    )
+  )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($coyle-theme);
+
+
+@font-face {
+  font-family: poppings_regular;
+  src: url(assets/fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+.main-page-heading{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px; /* Spacing between letters */
+  position: relative;
+  padding-bottom: 10px;
+}
+.main-page-heading::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: #ffc107; /* Accent color for underline */
+  transition: width 0.4s ease, left 0.4s ease;
+}
+.main-page-heading:hover::after{
+  width: 100%;
+  left: 0;
+}
+
+.sub-main-heading{
+  color: black;
+  font-weight: bold;
+  text-align: start;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: #000000; /* Underline color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+
+}
+
+.big-card-text{
+  font-size: 1.1rem;
+  color: #606060;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+.big-card-title {
+  font-size: 1.5rem; /* Larger title for big cards */
+  font-weight: bold;
+  color: #000000; /* Darker color for better contrast */
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease;
+  text-align: center;
+}
+.page{
+  height: auto;
+  }
+@media (min-width: 768px){
+  .page{
+      height: 100vh;
+      }
+}
+
+.btn-custom {
+  background-color: #5B5B5B;
+}
+.prominent {
+  color: #4A4A4A;
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.heading1 {
+  color: #4A4A4A;
+  font-family: Inter !important;
+  font-size: 40px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+
+.heading1_1 {
+  color: #4A4A4A;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.heading2 {
+  color: #4A4A4A;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.heading3 {
+  color: #4A4A4A;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.body1 {
+  color: #4D4D4D;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.body1_1 {
+  color: #4A4A4A;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.body2 {
+  color: #4A4A4A;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.body3 {
+  color: #4A4A4A;
+  font-family: Inter !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.minor {
+  color: #B9B9B9;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.minor2 {
+  color: #4A4A4A;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.minor_medium {
+  color: #5B5B5B;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.primary_btn {
+  border-radius: 20px !important;
+  background-color: #5B5B5B !important;
+  color: white !important;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+.btn-dark{
+  border-radius: 20px !important;
+  
+  color: white !important;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+
+}
+.modal-backdrop{
+  z-index: 2 !important;
+}
+.nav-link.active {
+  font-weight: bold;
+  color: #000000; /* Choose a color that fits your theme */
+  border-bottom: 2px solid #000000;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Inter, !important; 
+}
+.bg-image-4 {
+  background-image: url('/assets/images/logo-2.png');
+  height: 150px; /* Adjust as needed */
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+}
+

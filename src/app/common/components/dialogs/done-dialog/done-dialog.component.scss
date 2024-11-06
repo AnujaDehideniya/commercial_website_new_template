@@ -1,0 +1,16 @@
+button {
+  position: absolute;
+  right: 4%;
+  background-color: #adadad !important;
+  color: white !important;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  aspect-ratio: 1;
+  padding: 0%;
+  top: 2%;
+  display: flex;
+  mat-icon {
+    margin: auto;
+  }
+}

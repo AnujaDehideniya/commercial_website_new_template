@@ -1,0 +1,1 @@
+.top_bar{color:#fff;height:34px;width:40px;font-size:34px;text-align:center;cursor:pointer;margin:auto}.side{width:75vw}@media(min-width: 576px){.side{width:50vw}}@media(min-width: 768px){.side{width:50vw}}@media(min-width: 992px){.side{width:20vw}}@media(min-width: 1200px){.side{width:15vw}}@media(min-width: 1400px){.side{width:15vw}}.logout{color:brown;border:none}
